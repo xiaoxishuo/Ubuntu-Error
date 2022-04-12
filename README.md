@@ -2,8 +2,8 @@
 - 问题描述：
   对回收站内容restore后，系统卡死，强制重启后进不了ubuntu桌面且一直只有_在黑屏左上角闪烁
 - 尝试思路：
-  1、recovery mode下尝试fsck、dpkr、resume，问题依旧
-  2、root权限下startx
+  -1 recovery mode下尝试fsck、dpkr、resume，问题依旧
+  -2 root权限下startx
   3、查看驱动是否有误，输入```nvidia-smi```后，显示```NVIDIA-SMI has failed because it could't comuunicate with NVIDIA driver```
      按照。。。尝试```sudo apt-get dkms```和```sudo dkms install -m nvidia -v 470.103.01```后依旧failed
   4、尝试安装图形化见面
